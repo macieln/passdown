@@ -1,9 +1,11 @@
-function openWo(woId) {
-    console.log("Opened WO: " + woId)
+var viewNameEl = document.getElementById('viewName');
+var newWoButtonEl = document.getElementById('newWoButton');
+
+function initWO() {
+    viewNameEl.id = "newWoView";
+    viewNameEl.innerHTML = `<h3>New Work Order</h3>`;
 };
 
-var newWObuttonEl = document.getElementById('newWoButton');
-
-newWObuttonEl.addEventListener("click", function(){
-    console.log("What up Coco!");
+newWoButtonEl.addEventListener("click", function() {
+    initWO();
 });

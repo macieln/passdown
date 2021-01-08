@@ -32,6 +32,7 @@ header h1 {
     margin: auto;
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
+    cursor: default;
 }
 
 nav {
@@ -67,18 +68,20 @@ nav {
 }
 
 .navbutton:hover {    
-    background-color: #dddddd;
+    background-color: #ffffff;
     z-index: 0;
     box-shadow: none;
+    cursor: pointer;
 }
 
-.navbutton:hover p {    
+.navbutton:hover p {        
     color: #011221;
     font-weight: 900;
+    cursor: pointer;
 }
 
 #newWoButton:hover {
-    background-color: #dddddd;
+    background-color: #ffffff;
     z-index: 0;
     box-shadow: none;
 }
@@ -97,13 +100,15 @@ nav {
     left: 25vw;
     background-color: #042138;
     z-index: 100;
-    box-shadow: 0px 3px 3px #011221;
+    box-shadow: 0px 3px 3px #011221;    
 }
 
 #viewName h3 {
+    width: 100%;
     margin: auto;
     text-align: center;
     color: #ffffff;
+    cursor: default;
 }
 
 #tableHead {
@@ -125,6 +130,7 @@ nav {
     text-align: center;
     color: #ffffff;
     font-weight: 700;
+    cursor: default;
 }
 
 #woTable {
@@ -141,12 +147,9 @@ nav {
     width: 50vw;
     height: 4vh;
     margin: auto;
-    margin-top: .5vh;
+    margin-top: 1vh;
     display: flex;
     flex-direction: row;
-    /* background-color: #376D9A;
-    z-index: 25;
-    box-shadow: 1px 1px 0px #104673;   */
 }
 
 .woLine p {
@@ -168,5 +171,30 @@ nav {
 .woLine:hover {
     background-color: #dddddd;
     z-index: 0;
-    box-shadow: none;  
+    box-shadow: none;
+    cursor: pointer;  
+}
+
+.woLine:hover p {
+    cursor: pointer;  
+}
+
+#newWoView {
+    width: 50vw;
+    height: 5vh;    
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 25vw;
+    background-color: #489174;
+    z-index: 100;
+    box-shadow: 0px 3px 3px #277455;    
+}
+
+#newWoView h3 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    cursor: default;
 }
