@@ -8,7 +8,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 body {
@@ -18,25 +18,31 @@ body {
 
 header {
     width: 15vw;
-    height: 10vh;
+    height: 14vh;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #042138;
+    /* background-color: #042138;
     z-index: 100;
-    box-shadow: 0px 3px 3px #011221;
+    box-shadow: 0px 3px 3px #011221; */
 }
 
-header h1 {
+/* header h1 {
     margin: auto;
     font-family: 'Oswald', sans-serif;
     color: #ffffff;
     cursor: default;
+} */
+
+header img {
+    width: 85%;
+    height: 75%;
+    margin: auto;
 }
 
 nav {
-    width: 12vw;
+    width: 14vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -50,6 +56,8 @@ nav {
     height: 20%;
     margin: auto;
     display: flex;
+    flex-direction: row;
+    border-radius: 2rem 0 0 2rem;
     background-color: #042138;
     z-index: 100;
     box-shadow: 0px 3px 3px #011221;
@@ -89,6 +97,28 @@ nav {
 #newWoButton:hover p {
     color: #489174;
     font-weight: 900;
+}
+
+.navIcon {
+    width: 3.5vw;
+    height: 100%;
+    display: flex;
+    border-radius: 5rem;
+    background-color: #011221;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #000203;
+}
+
+#newWoButton .navIcon {
+    background-color: #277455;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #003A23;
+}
+
+.navIcon img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
 }
 
 #viewName {
