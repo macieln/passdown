@@ -17,7 +17,7 @@
     <nav>
         <div id="newWoButton" class="navButton"><div class="navIcon"><img src="img/new_icon.svg"></div><p>NEW WORK ORDER</p></div>
         <div id="woButton" class="navButton"><div class="navIcon"><img src="img/woList_incon.svg"></div><p>WORK ORDERS</p></div>
-        <div id="systemInfoButton" class="navButton"><div class="navIcon"><img src="img/info_icon.svg"></div><p>SYSTEM INFORMATION</p></div>
+        <div id="systemInfoButton" class="navButton"><div class="navIcon"><img src="img/info_icon.svg"></div><p>SYSTEM INFO</p></div>
         <div id="newToolButton" class="navButton"><div class="navIcon"><img src="img/newTool_icon.svg"></div><p>NEW TOOL</p></div>
     </nav>
 
@@ -26,7 +26,55 @@
     </div>
 
     <div id="newWoForm">
+        <div id="woTool">
+            <div id="equipmentSelect">
+                <p>Tool ID</p><input type="text" id="woToolId">
 
+                <p>Chamber</p>
+                <select name="" id="woChamber">
+                    <option value=""></option>
+                    <option value="iAtlas">iAtlas</option>
+                    <option value="Frame">Frame</option>
+                    <option value="PM2">PM2</option>
+                    <option value="PM3">PM3</option>
+                    <option value="Transfer">Transfer</option>
+                </select>
+            </div>
+
+            <div id="equipmentInfo">
+                <div>
+                    <p>Model</p>
+                    <p>iXH1820</p>
+                    <p>SN</p>
+                    <p>011223344</p>
+                    <p>IPN</p>
+                    <p>123456789</p>
+                    <p>VPN</p>
+                    <p>NRY00011133</p>
+                </div>
+                <div>
+                    <p>Install</p>
+                    <p>2020-03-12</p>
+                </div>
+                <div>
+                    <p>Due</p>
+                    <p>2023-03-12</p>
+                </div>
+            </div>
+        </div>
+
+        <p>Start</p>
+        <p>Date</p><input type="text" id="woStartDate">
+        <p>Time</p><input type="text" id="woStartTime">
+
+
+        <p>End</p>
+        <p>Date</p><input type="text" id="woStartDate">
+        <p>Time</p><input type="text" id="woStartTime">
+        
+        <div id="woTechsMenu">
+
+        </div>
     </div>
 
     <!-- <div id="tableHead">
@@ -35,9 +83,9 @@
         <p>STATUS</p>
         <p>TYPE</p>
         <p>DATE</p>        
-    </div> -->
+    </div>
 
-    <!-- <div id="woTable">
+    <div id="woTable">
         <div class="woLine" onclick="openWo(0)">
             <p id="toolId">DVD07</p>
             <p id="chamber">Transfer</p>
