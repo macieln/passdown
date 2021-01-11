@@ -60,7 +60,7 @@ nav {
     border-radius: 2rem;
     background-color: #042138;
     z-index: 100;
-    box-shadow: 0px 3px 3px #011221;
+    box-shadow: 3px 3px 3px #011221;
 }
 
 .navbutton p {
@@ -233,17 +233,20 @@ nav {
     width: 50vw;
     height: 100vh;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 8vh;
+    margin-left: 25vw;
     display: flex;
-    flex-direction: column;
-    /* margin-top: 5vh;
-    border: solid 5px #489174; */
+    flex-direction: row;
+}
+
+#newWoForm #woInfo {
+    height: 100%;
+    width: 50%;
+    margin: auto;
 }
 
 #newWoForm #equipmentInfo {
-
-}
-
-#newWoForm #equipmentInfo {
-    
+    height: 100%;
+    width: 50%;
+    margin: auto;
 }
